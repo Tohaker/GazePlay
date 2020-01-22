@@ -159,6 +159,10 @@ release {
     failOnPublishNeeded = false
     failOnCommitNeeded = false
     versionPropertyFile = 'gradle.properties'
+
+    git {
+        requireBranch = 'release-configuration'
+    }
 }
 
 mainClassName = 'net.gazeplay.GazePlayLauncher'
